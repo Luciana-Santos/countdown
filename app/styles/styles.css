@@ -1,0 +1,157 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  line-height: 1.5;
+  background-image: url("https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: var(--cl-white);
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.section {
+  padding-block: 1.875rem;
+}
+
+.container {
+  width: min(100% - 2rem, 55rem);
+  margin-inline: auto;
+}
+
+:root {
+  --cl-white: hsl(0, 0%, 100%);
+  --cl-black: #000;
+}
+
+.countdown__wrapper {
+  display: grid;
+  padding-block: 5rem;
+  gap: 60px;
+  justify-content: center;
+}
+.countdown__wrapper form {
+  display: flex;
+  gap: 1.25rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 20px;
+}
+.countdown__wrapper form input {
+  background: transparent;
+  color: #fff;
+  border: transparent;
+  border-bottom: 2px solid #fff;
+  padding: 0.625rem;
+  font-size: 1.125rem;
+  width: 100%;
+}
+.countdown__wrapper form input:focus {
+  outline: none;
+}
+.countdown__wrapper form input::placeholder {
+  color: #b3cdd3;
+}
+@media (min-width: 31.25em) {
+  .countdown__wrapper form {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+.countdown__wrapper__tit {
+  padding: 15px;
+  width: 80%;
+  background: transparent;
+  color: #fff;
+  border: transparent;
+  border-bottom: 2px solid #fff;
+}
+@media (min-width: 31.25em) {
+  .countdown__wrapper__tit {
+    width: 100%;
+  }
+}
+.countdown__wrapper__data {
+  padding: 13px;
+  width: 80%;
+}
+@media (min-width: 31.25em) {
+  .countdown__wrapper__data {
+    width: 80%;
+  }
+}
+.countdown__wrapper .btn {
+  padding: 18px;
+  width: 100%;
+  background: #3e424f;
+  color: #fff;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.625rem;
+}
+.countdown__wrapper .btn:hover {
+  background: #4a4f5e;
+}
+@media (min-width: 31.25em) {
+  .countdown__wrapper .btn {
+    width: max-content;
+    margin-top: 0;
+  }
+}
+.countdown__wrapper .contador {
+  text-align: center;
+  padding-inline: 20px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+}
+.countdown__wrapper .contador h1 {
+  font-size: 28px;
+  line-height: 2.75rem;
+  text-transform: capitalize;
+}
+.countdown__wrapper .contador__num {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.countdown__wrapper .contador__num .num h2 {
+  font-size: 70px;
+}
+.countdown__wrapper .contador__num .num span {
+  font-size: 16px;
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */
