@@ -1,0 +1,121 @@
+@use '../utils/' as *;
+
+.countdown__wrapper {
+  display: grid;
+  padding-block: 5rem;
+  gap: 60px;
+  justify-content: center;
+
+  form {
+    display: flex;
+    gap: rem(20);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+
+  
+    input {
+      background: transparent;
+      color: #fff;
+      border: transparent;
+      border-bottom: 2px solid #fff;
+      padding: rem(10);
+      font-size: rem(18);
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+  
+      &::placeholder {
+        color: #b3cdd3;
+      }
+    }
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+      align-items:stretch;
+    }
+  }
+
+  &__tit {
+    padding: 15px;
+    width: 80%;
+    background: transparent;
+    color: #fff;
+    border: transparent;
+    border-bottom: 2px solid #fff;
+
+    @include breakpoint(medium) {
+      width: 100%;
+    }
+  }
+
+  &__data {
+    padding: 13px;
+    width: 80%;
+
+    @include breakpoint(medium) {
+      width: 80%;
+    }
+  }
+
+  .btn {
+    padding: 18px;
+    width: 100%;
+    background: #3e424f;
+    color: #fff;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: rem(18);
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: rem(10);
+
+    &:hover {
+      background: #4a4f5e;
+    }
+
+    @include breakpoint(medium) {
+      width: max-content;
+      margin-top: 0;
+    }
+  }
+
+  .contador {
+    text-align: center;
+    padding-inline: 20px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+  
+    h1 {
+      font-size: 28px;
+      line-height: 2.75rem;
+      text-transform: capitalize;
+    }
+  
+    &__num {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .num {
+        h2 {
+          font-size: 70px;
+        }
+  
+        span {
+          font-size: 16px;
+          display: block;
+        }
+      }
+    }
+  }
+  
+}

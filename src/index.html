@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown</title>
+  <link rel="stylesheet" href="./app/styles/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="container">
+    <div class="countdown__wrapper">
+      <form>
+        <input type="text" placeholder="Titulo do contador" data-input="titulo" class="input__tit">
+        <input type="date" data-input="data" class="input__data">
+        <button class="btn" data-input="btn">Enviar</button>
+      </form>
+      <div class="contador">
+        <h1 data-contador="titulo">Bem-vindo!</h1>
+        <div class="contador__num">
+          <div class="num">
+            <h2 data-contador="dias">-</h2>
+            <span>dias</span>
+          </div>
+
+          <div class="num">
+            <h2 data-contador="horas">-</h2>
+            <span>hrs</span>
+          </div>
+          <div class="num">
+            <h2 data-contador="minutos">-</h2>
+            <span>min</span>
+          </div>
+          <div class="num">
+            <h2 data-contador="segundos">-</h2>
+            <span>seg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./app/js/index.js" defer></script>
+</body>
+
+</html>
